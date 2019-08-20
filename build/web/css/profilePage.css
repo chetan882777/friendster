@@ -1,0 +1,217 @@
+.top-image-holder
+{
+	width: 100%;
+	height:auto;
+	background: linear-gradient(to right bottom ,indigo , cyan);
+}
+
+body
+{
+	background-color: #f1f1f1;
+}
+
+.top-image-text-holder
+{
+	width: 100%;
+	height: 260px;
+}
+.top-image-text{
+	font-family: calibri;
+	color: white;
+	padding-top: 70px;
+	font-size: 50px;
+	font-weight: 200;
+	text-align: center;
+	margin: 0px;
+
+}
+.top-image-text-bottom{
+	font-family: calibri;
+	color: white;
+	padding-top: 5px;
+	font-size: 18px;
+	font-weight: 200;
+	text-align: center;
+	margin: 0px;
+	max-width: 700px;
+	margin: auto;
+
+}
+.top-image
+{
+	width: 100%;
+}
+.welcome-image
+{
+	width: 100%;
+	height:auto;
+	margin-bottom: -4px;
+}
+.friend-zone
+{
+	width: 96%;
+	padding: 20px;
+}
+.grid-hold
+{
+	margin: auto;
+}
+.grid
+{
+	background-color: white;
+	display: inline-block;
+	margin: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #e6e6e6;
+	transition: all 0.2s;
+}
+.grid:hover
+{
+		box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.2);
+
+}
+.friend-icon-hold
+{
+	margin: 40px;
+	width: 130px;
+	height: 130px;
+	border: 4px solid white;
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+	background-color: gray;
+	border-radius: 100px;
+	margin-bottom: 20px;
+}
+.friend-name-hold
+{
+	width: 160px;
+	margin: auto;
+}
+.friend-name 
+{
+	font-size: 18px;
+	font-weight: 600;
+	font-family: calibri;
+	text-align: center;
+	color: #666;
+	width: 160px;
+	overflow: hidden;
+	text-transform: capitalize;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin: 0px;
+
+}
+.friend-name-mutual
+{
+	font-size: 14px;
+	margin: 0px;
+	font-weight:normal;
+	font-family: calibri;
+	text-align: center;
+	color: #666;
+	width: 160px;
+}
+.friend-action-btn-holder
+{
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+}
+.action-btn
+{
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	background-color: #7c5ac2;
+	transition: all 0.5s;
+}
+.action-icon
+{
+	color: white;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: calibri;
+	text-align: center;
+	padding: 10px;
+}
+.action-btn:hover
+{
+	box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.2);
+	background: #a367fd;
+
+}
+.info-text-hold
+{
+	width: 400px;
+	height: 50px;
+	border-bottom: 1px solid lightgray;
+}
+.info-text
+{
+	font-size: 20px;
+	margin: 0px;
+	font-weight:600;
+	text-transform: capitalize;
+	font-family: calibri;
+	color: #666;
+	width: 320px;
+	padding: 10px;
+	padding-left: 40px;
+}
+.info-pad
+{
+	width: 100%;
+}
+.row
+{
+	width: 100%;
+}
+.info-col-40
+{
+	width: 40%;
+	float: left;
+}
+.bold-600
+{
+	font-weight:600;
+}
+.info-col-60
+{
+	width: 60%;
+	float: left;
+}
+.info-text-normal
+{
+	font-size: 16px;
+	margin: 0px;
+	font-family: calibri;
+	color: #666;
+	padding: 10px;
+}
+.load-more-hold
+{
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	border: 1px solid #e6e6e6;
+	box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
+	position: sticky;
+	top:70px;
+}
+.load-more 
+{
+	font-size: 18px;
+	font-weight: 600;
+	font-family: calibri;
+	text-align: center;
+	color: #999;
+	padding: 10px;
+	margin: 0px;
+
+}

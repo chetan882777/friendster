@@ -1,0 +1,111 @@
+.top-image-holder
+{
+	width: 100%;
+	height:auto;
+	background-color: dodgerblue;
+	animation: color_variation;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	background: linear-gradient(to right bottom ,tomato ,orange);
+}
+
+
+.top-image-text-holder
+{
+	width: 100%;
+	height: 260px;
+}
+.top-image-text{
+	font-family: calibri;
+	color: white;
+	padding-top: 70px;
+	font-size: 50px;
+	font-weight: 200;
+	text-align: center;
+	margin: 0px;
+
+}
+.top-image-text-bottom{
+	font-family: calibri;
+	color: white;
+	padding-top: 5px;
+	font-size: 18px;
+	font-weight: 200;
+	text-align: center;
+	margin: 0px;
+	max-width: 700px;
+	margin: auto;
+
+}
+.top-image
+{
+	width: 100%;
+}
+.welcome-image
+{
+	width: 100%;
+	height:auto;
+}
+.option-icon
+{
+	width: 300px;
+	height: 100px;
+	display: block;
+}
+.icon-group-hold
+{
+	width: 680px;
+	padding: 5px;
+	background-color: #f1f1f1;
+	min-height: 150px;
+	max-height: 300px;
+	overflow-y: auto;
+	border: 2px solid #f9f9f9;
+	box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.2);
+}
+.icon-grid
+{
+	margin: 3.5px;
+	display: inline-block;
+	width: 100px;
+	height: 130px;
+	background-color: white;
+	transition: all 0.3s;
+}
+.icon-grid:hover
+{
+	box-shadow: 0px 8px 8px 4px rgba(0,0,0,0.2);
+}
+.icon-grid:active
+{
+	box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.2);
+}
+.icon-block
+{
+	width: 70px;
+	height: 70px;
+	background-color: lightgray;
+	margin: 15px;
+	border-radius: 45px;
+
+}
+.full
+{
+	width: 100%;
+	height: 100%;
+}
+.icon-text-block
+{
+	width: 90px;
+	height: 20px;
+	margin: 0px 5px 10px 5px;
+}
+.icon-name-text
+{
+	color: #555;
+	font-size: 14px;
+	margin: 0px;
+	text-align: center;
+	font-family: calibri;
+}

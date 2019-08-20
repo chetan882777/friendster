@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="css/navigationBar.css">
+	<link rel="stylesheet" type="text/css" href="css/logIn.css">
+	<meta charset="utf-8">
+</head>
+<style id="sizeLoader">
+</style>
+<body style="background:none" onload="positionSizer()">
+	<div class="topnav1">
+		<img src="images/index2.png" class="logo">
+		<div >
+			<ul class="topnav-ul" style="float: left;">
+				<li class="topnav-li" >
+					<a href="#" class="nav-page-text">
+						<i class="fas fa-bars" onclick="sideBarActive()"></i>
+					</a>
+				</li>
+				<li class="topnav-li" >
+					<a href="#" class="nav-page-text">Home</a>
+				</li>
+				<li class="topnav-li" style="position: relative;">
+					<a href="#" class="nav-page-text">
+						<i class="fas fa-caret-down"></i>
+					</a>
+					<div class="dropdown">
+						<a href="#" class="nav-page-text" style="font-size: 16px; color: gray"><i class="fas fa-user-plus"></i><span style="padding: 10px">Find Friends</span></a>
+						<a href="#" class="nav-page-text" style="font-size: 16px;  color: gray"><i class="fas fa-user"></i>
+					<span style="padding: 10px">Edit Profile</span></a>
+					</div>
+				</li>
+				<li class="topnav-li" >
+					<input type="text" class="text-search" placeholder="Search here people...">
+				</li>
+				<li class="topnav-li">
+					<a href="#" class="text-search-icon">
+						<i class="fas fa-search"></i></a>
+				</li>
+				<li class="topnav-li" >
+					<a href="#" class="nav-page-text" style="font-size: 16px"><i class="fas fa-user-plus"></i><span style="padding: 10px">Find Friends</span></a>
+				</li>
+				<li class="topnav-li" >
+					<a href="#" class="nav-page-text" style="font-size: 16px"><i class="fas fa-user"></i>
+					<span style="padding: 10px">Edit Profile</span></a>
+				</li>
+			</ul>
+			<ul class="topnav-ul"  style="float: right;">
+				<li class="topnav-li-r" >
+					<a href="#" class="text-search-icon">
+						<i class="fas fa-search"></i></a>
+				</li>
+				<li class="topnav-li">
+					<a href="#" class="nav-page-text">
+						<i class="fas fa-bars"
+						onclick="sideBarActiveR()"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+</div><!--topnav-->
+<div>
+</div>
+<div class="sidebar-left" id="side_bar_l"> 
+	<div class="sidebar-name-holder">
+		
+		<p class="sidebar-name">Recent Chats 
+			<i class="fas fa-times" 
+			style="float: right;margin-right: 20px; cursor: pointer;" 
+			onclick="sideBarDeactive()"
+			id="sidebarclosebtn" 
+			class="side-close-btn"></i></p>
+	
+	</div>
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h05.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					kal college jayega? ki nahi
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			
+			<p class="person-time"><i class="far fa-clock"></i> 12 min </p>
+			<p class="person-time person-m" >1</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/145841-avatar-set/png/boy.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					kal college jayega?
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			
+			<p class="person-time"><i class="far fa-clock"></i> 12 min </p>
+			<p class="person-time person-m" >1</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+
+
+	<div class="person-holder active-person">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/145841-avatar-set/png/boy-1.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					kal college jayega?
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			
+			<p class="person-time"><i class="far fa-clock"></i> 12 min </p>
+			<p class="person-time person-m" >1</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/145841-avatar-set/png/girl.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					kal college jayega?
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			
+			<p class="person-time"><i class="far fa-clock"></i> 12 min </p>
+			<p class="person-time person-m" >1</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/145841-avatar-set/png/girl-1.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					kal college jayega?
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			
+			<p class="person-time"><i class="far fa-clock"></i> 12 min </p>
+			<p class="person-time person-m" >1</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/145841-avatar-set/png/man.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					kal college jayega?
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			
+			<p class="person-time"><i class="far fa-clock"></i> 12 min </p>
+			<p class="person-time person-m" >1</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/145841-avatar-set/png/man-1.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					kal college jayega?
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			
+			<p class="person-time"><i class="far fa-clock"></i> 12 min </p>
+			<p class="person-time person-m" >1</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/145841-avatar-set/png/man-2.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					kal college jayega?
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			
+			<p class="person-time"><i class="far fa-clock"></i> 12 min </p>
+			<p class="person-time person-m" >1</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/145841-avatar-set/png/man-3.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					kal college jayega?
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			
+			<p class="person-time"><i class="far fa-clock"></i> 12 min </p>
+			<p class="person-time person-m" >1</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/145841-avatar-set/png/man-4.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					kal college jayega?
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			
+			<p class="person-time"><i class="far fa-clock"></i> 12 min </p>
+			<p class="person-time person-m" >1</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h05.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					kal college jayega?
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			
+			<p class="person-time"><i class="far fa-clock"></i> 12 min </p>
+			<p class="person-time person-m" >1</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h05.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					kal college jayega?
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			
+			<p class="person-time"><i class="far fa-clock"></i> 12 min </p>
+			<p class="person-time person-m" >1</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h01.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					kal college jayega?
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			
+			<p class="person-time"><i class="far fa-clock"></i> 12 min </p>
+			<p class="person-time person-m" >1</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h02.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					kal college jayega?
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			
+			<p class="person-time"><i class="far fa-clock"></i> 12 min </p>
+			<p class="person-time person-m" >1</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h03.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					kal college jayega?
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			
+			<p class="person-time"><i class="far fa-clock"></i> 12 min </p>
+			<p class="person-time person-m" >1</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h04.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					kal college jayega?
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			
+			<p class="person-time"><i class="far fa-clock"></i> 12 min </p>
+			<p class="person-time person-m" >1</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+	
+	<div class="bottom-marginer-l">
+		<p class="person-time" style="text-align: center;"> 16 chats of 320 friends</p>
+	</div>
+	<div class="sidebar-name-holder"
+	style="top: auto;bottom: 0px;
+	background-color: #ff5e3a;
+	box-shadow: "> 
+	<p class="sidebar-name"
+	style="text-align: center;
+	color: white;
+	font-size: 20px">Log Out
+	</div>
+
+</div><!--sidebar-left-->
+
+
+<!--__________________________________________________________-->
+<!--__________________________________________________________-->
+
+<!--__________________________________________________________-->
+
+<!--__________________________________________________________-->
+
+
+<div class="sidebar-right" id="side_bar_r">
+	<div class=" sidebar-name-r">
+		
+		<p class="sidebar-name" style="">Active Friends
+			<i class="fas fa-times" 
+			style="float: right;margin-right: 20px; cursor: pointer;" 
+			onclick="sideBarDeactiveR()"
+			id="sidebarclosebtnR" 
+			class="side-close-btn"></i></p>
+	
+	</div>
+
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h04.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					since &nbsp;
+					<i class="far fa-clock"></i>12 min 
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			<p class="person-time person-m" >on</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h04.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					since &nbsp;
+					<i class="far fa-clock"></i>12 min 
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			<p class="person-time person-m" >on</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h04.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					since &nbsp;
+					<i class="far fa-clock"></i>12 min 
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			<p class="person-time person-m" >on</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h04.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					since &nbsp;
+					<i class="far fa-clock"></i>12 min 
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			<p class="person-time person-m" >on</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h04.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					since &nbsp;
+					<i class="far fa-clock"></i>12 min 
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			<p class="person-time person-m" >on</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h04.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					since &nbsp;
+					<i class="far fa-clock"></i>12 min 
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			<p class="person-time person-m" >on</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h04.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					since &nbsp;
+					<i class="far fa-clock"></i>12 min 
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			<p class="person-time person-m" >on</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h04.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					since &nbsp;
+					<i class="far fa-clock"></i>12 min 
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			<p class="person-time person-m" >on</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h04.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					since &nbsp;
+					<i class="far fa-clock"></i>12 min 
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			<p class="person-time person-m" >on</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h04.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					since &nbsp;
+					<i class="far fa-clock"></i>12 min 
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			<p class="person-time person-m" >on</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h04.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					since &nbsp;
+					<i class="far fa-clock"></i>12 min 
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			<p class="person-time person-m" style="background-color: red">off</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+
+	<div class="person-holder">
+		<div class="person-icon-holder">
+			<div class="icon-hold">
+				<img src="icons/Males/h04.png" style="width: 100%; height: 100%;">
+			</div>
+		</div>
+		<div class="person-text-holder">
+			<div class="person-name-holder">
+				<p class="person-name">
+					darshan patidar hello worldfghjdfgdfh
+				</p>
+			</div>
+			<div class="person-name-holder" style="height: 45px;">
+				<p class="person-name" style="font-weight: 100; font-size: 16px; text-indent: 15px;">
+					since &nbsp;
+					<i class="far fa-clock"></i>12 min 
+				</p>
+			</div>
+		</div><!--person-text-holder-->
+		<div class="person-indicator-holder">
+			<p class="person-time person-m" style="background-color: red">off</p>
+		</div><!--person-indicator-holder-->
+	</div><!--person-holder-->
+
+	<div  class="bottom-marginer">
+		<p class="person-time" style="text-align: center;"> 16 active of 320 friends</p>
+	</div>
+
+	
+</div><!--sidebar-right-->
+
+<!--________________________________________________________-->
+<!--________________________________________________________-->
+<!--________________________________________________________-->
+<!--________________________________________________________-->
+<!--________________________________________________________-->
+<!--________________________________________________________-->
+<!--________________________________________________________-->
+<!--________________________________________________________-->
+<!--________________________________________________________-->
+
+
+<div class="sizer">
+<iframe src="chatRoom.html" class="chatframe" ></iframe>
+</div>
+<script defer src="js/fontawesome-all.js"></script>
+<script type="text/javascript" src="js/home.js"></script>
+</body>
+</html>
